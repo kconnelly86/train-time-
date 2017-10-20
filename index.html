@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Head of Website -->
+	<head>
+	<!-- Bootstrap Style Sheet URL -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- My CSS Stylesheet Links -->
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+		<title> Take a Train </title>
+
+	<!-- Google Font Links & Icon Links-->
+		<script src="https://use.fontawesome.com/92c41c2648.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<!-- Bootstrap Script Links -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	</head>
+
+
+<!-- Body of Website -->
+	<body>
+
+	<!-- Header Jumbotron -->
+		<section class="header">
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <h1 class="display-3"> Light Rail </h1>
+			    <p class="lead">The best way to travel safely!</p>
+			  </div>
+			</div>
+		</section>
+
+	<!-- Data Results Will Appear In This Grid -->
+		<h1 class="title jumbotron"> <i class="fa fa-address-card-o" aria-hidden="true"></i>  Current Train Schedule: </h1>
+		<section class="data">
+
+			<table class=" table table-hover" >
+				<thead>
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency</th>
+						<th>Next Arrival (min)</th>
+					</tr>
+				</thead>
+				<tbody id="trainTable">
+
+				</tbody>
+				
+			</table>
+
+
+			<div id="input-data-here"> 
+
+			</div>
+
+		</section>
+
+	<!-- Input Form -->
+		<h1 class="title jumbotron"> <i class="fa fa-plus" aria-hidden="true"></i>  Add a Train: </h1>
+		<section class="input-form">
+
+			<form>
+			  	<div class="form-group">
+			  		<label for="Train-name">Train Name</label>
+			    	<input type="name" class="form-control" id="train-name"  placeholder="Train Name">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="Destination">Destinantion</label>
+			    	<input type="name" class="form-control" id="destination" placeholder="Where To?">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="First-Train">First Train Time (HH:mm - military)</label>
+			    	<input type="name" class="form-control" id="first-train" placeholder="Train Time">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="Frequency"> Frequency (min)</label>
+			    	<input type="name" class="form-control" id="frequency" placeholder="Next Train">
+			  	</div>
+			 
+			  	<button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+			</form>
+			
+		</section>
+
+
+	<!-- JavaScript & jQuery & Firebase Links -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+		<script type="text/javascript" src="script.js"></script> 
+
+	</body>
+
+</html>
